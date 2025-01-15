@@ -1,0 +1,110 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# DotEnv configuration
+.env
+
+# Database
+*.db
+*.rdb
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Spyder
+.spyproject/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Exclude data from source control by default
+data/raw/
+data/raw/**/*
+references/handson-ml2/
+
+# Mac OS-specific storage files
+.DS_Store
+
+# Vim swap files
+*.swp
+*.swo
+
+# Mypy cache
+.mypy_cache/
+
+# Large model files or intermediate results
+*.h5
+*.onnx
+*.pkl
+*.ckpt
+*.pt
+*.pb
+
+# Large CSV or data files
+*.csv
+*.json
+*.parquet
+*.feather
+
+# Log files
+*.log
+logs/
+*.out
+*.err

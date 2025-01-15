@@ -1,0 +1,73 @@
+# Conda Environment Setup Instructions
+#  - Using an environment.yml file with conda
+#  - Key Terminal Commands:
+#
+#    conda env create -f environment.yml
+#    conda env update --file environment.yml --prune
+#    conda env export --name tracking-barbell-exercises > environment.yml
+#    conda env remove --name tracking-barbell-exercises
+#    conda env list
+#jupyter lab   # to Start Jupyter Lab
+
+# To update the environment.yml file with the latest dependencies:
+# conda env update -f environment.yml --prune
+
+
+
+name: unified-ai-pipeline_v2  # Project-specific environment name for this pipeline
+channels:
+  - defaults       # Default Conda channel for most packages
+  - conda-forge    # Community-maintained packages with broader support
+  - pytorch        # Channel for PyTorch and related libraries
+
+dependencies:
+  # Core Python and ML libraries
+  - python=3.9         # Specific Python version compatible with TensorFlow and PyTorch
+  - numpy              # Fundamental library for numerical computations
+  - pandas             # Data manipulation and analysis library
+  - scikit-learn       # Machine learning library with classic algorithms
+  - tensorflow         # TensorFlow for deep learning (CPU version by default)
+  - pytorch            # PyTorch for deep learning (framework)
+  - torchvision        # Computer vision tasks library for PyTorch
+
+  # Visualization libraries
+  - matplotlib         # Library for static and interactive plotting
+  - seaborn            # Statistical data visualization (built on Matplotlib)
+  - plotly             # Interactive visualization library for advanced plotting
+
+  # Data handling and utilities
+  - scipy              # Scientific computing (e.g., optimization, integration)
+  - joblib             # Model saving and parallel processing utilities
+  - h5py               # HDF5 file format support (commonly used in deep learning)
+  - graphviz           # Graph generation for decision trees, flowcharts, etc.
+  - protobuf           # Protocol Buffers library for serialization (required by TensorFlow)
+  - pyarrow            # High-performance data processing and in-memory storage
+
+  # Notebook support
+  - jupyterlab         # Interactive development environment for Jupyter notebooks
+  - ipywidgets         # Interactive widgets for enhancing Jupyter notebooks
+  - nbconvert          # Conversion of Jupyter notebooks to other formats (e.g., HTML, PDF)
+
+  # Logging and debugging utilities
+  - rich               # Modern library for improved terminal output and logs
+  - tqdm               # Progress bar for loops, data loading, and processes
+
+  # Deep learning utilities and optimizations
+  - tensorboard        # Visualization toolkit for TensorFlow experiments
+  - optuna             # Framework for hyperparameter optimization
+  - onnxruntime        # ONNX model inference for high-performance AI model execution
+
+  # Pip dependencies
+  - pip                # Python package installer
+  - pip:
+      # - nvidia-pyindex       # NVIDIA package index to manage GPU-related dependencies
+      # - nvidia-tensorflow    # NVIDIA-optimized TensorFlow package for GPU acceleration
+      # - nvidia-pytorch       # NVIDIA-optimized PyTorch package for GPU acceleration
+      - pre-commit           # Pre-commit hooks to enforce coding standards
+
+# Notes:
+# - This environment is designed to support both CPU and GPU operations.
+# - For GPU support, ensure NVIDIA drivers and CUDA toolkit are properly installed on your system.
+# - NVIDIA-specific packages (like `nvidia-tensorflow` and `nvidia-pytorch`) are included for enhanced GPU support.
+# - Additional logging and debugging tools (e.g., `rich` and `tqdm`) are added for better development workflow visibility.
+# - `pre-commit` is included to automate and enforce version control best practices.
