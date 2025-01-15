@@ -75,7 +75,7 @@ target/
 .ipynb_checkpoints/
 
 # Exclude data from source control by default
-data/raw/
+data/raw/   
 data/raw/**/*
 references/handson-ml2/
 
