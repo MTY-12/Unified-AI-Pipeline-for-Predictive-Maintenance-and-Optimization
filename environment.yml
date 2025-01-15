@@ -71,3 +71,41 @@ dependencies:
 # - NVIDIA-specific packages (like `nvidia-tensorflow` and `nvidia-pytorch`) are included for enhanced GPU support.
 # - Additional logging and debugging tools (e.g., `rich` and `tqdm`) are added for better development workflow visibility.
 # - `pre-commit` is included to automate and enforce version control best practices.
+
+
+# To create the environment from the environment.yml file:
+# conda activate unified-ai-pipeline_v2
+
+# #to update the environment.yml file with the latest dependencies:
+# conda env update -f environment.yml --prune
+
+# To activate this environment, use
+#  conda activate unified-ai-pipeline_v2
+# conda env list
+# conda deactivate
+
+
+# 1. Main Branch Setup
+# git checkout main
+# git pull origin main
+
+
+# 2. Predictive Maintenance
+# git checkout -b predictive-maintenance
+# git add .
+# git commit -m "Implement Predictive Maintenance with Neural Network and Decision Tree"
+# git push -u origin predictive-maintenance
+
+
+# Merge into Main
+# git checkout main #switch to main branch
+# git pull origin main
+
+# #merge the predictive-maintenance branch into the main branch
+# git merge predictive-maintenance
+
+# git push origin main #push the changes to the main branch
+
+# git branch -d predictive-maintenance #delete the predictive-maintenance branch locally
+
+# git push origin --delete predictive-maintenance #delete the predictive-maintenance branch remotely
