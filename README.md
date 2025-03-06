@@ -138,5 +138,5 @@ This project is licensed under the MTY License. See the `LICENSE` file for detai
 ---
 
 ## Contact 📬
-- Email: [your-email@example.com]
-- LinkedIn: [Your LinkedIn Profile]
+- Email: mty_12@outlook.com
+- LinkedIn: 
