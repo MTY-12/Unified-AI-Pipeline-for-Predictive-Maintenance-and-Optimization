@@ -1,6 +1,3 @@
-Here is a structured **README** file for your GitHub page, based on the extracted content from your technical report:
-
----
 
 # Unified AI Pipeline for Anomaly Detection and Predictive Maintenance 🚀
 
@@ -70,7 +67,8 @@ The pipeline follows a **structured AI-driven approach**:
 - **Phase 1: Deep Learning-based Anomaly Detection**  
   - **Autoencoder** trained exclusively on normal data.
   - **Reconstruction error thresholding** for anomaly classification.
-  
+  ![image](https://github.com/user-attachments/assets/d992c3cf-1c33-4e2a-afd7-c94fe5fe6656)
+
 - **Phase 2: Classical ML Anomaly Classification**
   - **Random Forest**, **One-Class SVM**, and **KNN** (various distance metrics).
   - Recursive Feature Elimination (RFE) for selecting the **most important features**.
@@ -118,13 +116,15 @@ pip install -r requirements.txt
 ### 3D Visualization of Ensemble Model Predictions
 The **ensemble learning approach** successfully classified anomalies in the dataset, as shown in the 3D PCA representation:
 
-![3D Scatter Plot](https://github.com/user-attachments/assets/3d_plot.png)
+![3D Scatter Plot](https://github.com/user-attachments/assets/73e7166d-728b-454b-af58-ce79d692e4d3)
 
 - **Red points** indicate detected anomalies.
 - **Blue points** indicate normal operations.
 - **The model effectively separates anomalous behavior** but requires further refinement for edge cases.
 
 ### Feature Importance Ranking  
+![image](https://github.com/user-attachments/assets/55d3c3fc-74f9-431e-984a-507f4850371f)
+
 The **most significant features** contributing to anomaly detection include:
 - **KNN predictions (Minkowski, Euclidean, Manhattan)**
 - **PCA components (PC1, PC2, PC18)**
@@ -164,7 +164,6 @@ This project **incorporates AI-assisted development**, and to reflect that, I am
 - **Optimizing ML pipelines** with auto-generated code suggestions.
 - **Iterative AI-driven debugging and performance tuning**.
 
-Thus, I acknowledge the **collaborative role of AI** while ensuring that **all critical engineering decisions, data interpretation, and implementation were conducted manually**.
 
 ---
 
