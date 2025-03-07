@@ -131,7 +131,8 @@ The **most significant features** contributing to anomaly detection include:
 - **Autoencoder-based anomaly scores**
 - **Optimized ensemble predictions**
 
-![Feature Importance](https://github.com/user-attachments/assets/feature_importance.png)
+![Precision, Recall, and F1-Score change as we lower the anomaly detection threshold from 95% to 60%.]
+![image](https://github.com/user-attachments/assets/444b154d-8f76-432e-85a2-e9b4f95af6e3)
 
 ---
 
